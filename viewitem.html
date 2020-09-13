@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>BeltAuctions</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="d-flex flex-grow-1">
+            <a href="index.html" class="navbar-brand">BeltAuctions</a>
+            <form class="mr-2 my-auto w-100 d-inline-block order-1">
+                <div class="input-group">
+                    <input type="text" class="form-control border border-right-0" placeholder="Search...">
+                    <span class="input-group-append">
+                        <button class="btn btn-outline-light border border-left-0" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+        <button class="navbar-toggler order-0" type="button" data-toggle="collapse" data-target="#navbar7">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse flex-shrink-1 flex-grow-0 order-last" id="navbar7">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="listitem.html">List Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="watchlist.html">Watchlist</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid px-5 py-5">
+        <div class="row">
+            <h1>Item Listing Title</h1>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <img src="http://placekitten.com/500/500" class=img-fluid>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <small>CURRENT BID</small>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <h1>$0.00</h1>
+                    </div>
+                    <div class="col-1">
+                        <div class="row my-1">
+                            <button class="btn btn-primary text-nowrap mx-2 btn-block" type="button" data-toggle="modal" data-target="#bidModal" >Bid</button>
+                        </div>
+                        <div class="row my-1">
+                            <button class="btn btn-secondary text-nowrap mx-2 btn-block" type="button" >Watch</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <small><strong>Listed by: User1</strong></small>
+                </div>
+                <div class="row">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu est justo. Mauris pellentesque id est non placerat. Curabitur vitae blandit metus. Donec id aliquet ipsum. Nulla eget purus non nisi blandit commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce vulputate vehicula eros nec scelerisque. In convallis vestibulum leo, sit amet varius lorem convallis ac. Etiam vel tincidunt odio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-5 py-5">
+        <div class="row">
+            <h3>Details</h3>
+        </div>
+        <div class="row">
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <th scope="row">Type</th>
+                        <td>Official Replica</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Condition</th>
+                        <td>Like New</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sport</th>
+                        <td>Professional Wrestling</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Organisation</th>
+                        <td>New Japan Pro Wrestling</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Manufacturer</th>
+                        <td>Shinnichi Premium</td>
+                    </tr>
+                </tbody>                
+            </table>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bidModal" tabindex="-1" aria-labelledby="bidModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Enter Bid</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                      <div class="col">
+                          <small>CURRENT BID</small>
+                      </div>
+                      <div class="col">
+                          <small>YOUR BID</small>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                          <h1 class="text-center">$0.00</h1>
+                      </div>
+                      <div class="col">
+                          <!--INPUT TEXT BOX-->
+                      </div>
+                  </div>
+                  <div class="row">
+                      <!--INPUT CHECKBOX-->Add item to watchlist
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel Bid</button>
+                  <button type="button" class="btn btn-primary">Confirm Bid</button>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
